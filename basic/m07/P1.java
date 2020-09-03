@@ -1,35 +1,29 @@
 package basic.m07;
-
-
-/**
- * Write a description of class P1 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+import java.util.Scanner;
 public class P1
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class P1
-     */
-    public P1()
+    public static void main()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+       Scanner sc=new Scanner(System.in);
+       int n1,n2,sum=0;
+       System.out.println("Enter n for the series 0,1,3,5,7,15");
+       n1=sc.nextInt();
+       System.out.print("0,");
+       for(int i=0;i<=n1;i++)
+       {
+       
+               sum=(sum*2)+1;
+               System.out.print(","+sum);
+           
+        }
+       System.out.println("Enter n for the series 1,1,11,111");
+       n2=sc.nextInt();
+       int s = 0, c;                                          
+       for (c = 1; c <= n2; c++)                           
+       {
+           s = s * 10 + 1;
+           System.out.print(s + " ");
+       }                    
+       
     }
 }

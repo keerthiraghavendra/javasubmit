@@ -1,35 +1,32 @@
 package basic.m07;
-
-
-/**
- * Write a description of class P2 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+import java.util.Scanner;
 public class P2
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class P2
-     */
-    public P2()
+    public static void main()
     {
-        // initialise instance variables
-        x = 0;
-    }
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter numbers for the series (1*2)+(2*3)+(3*4)...");
+        int n1 = sc.nextInt();
+        int summ=0;
+        for(int i=1;i<=n1;i++)
+        {
+          summ=summ+(i*(i+1)); 
+        }
+        System.out.println("enter numbers for the series x^1-x^3+x^5....");
+        int sum = 0;
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        System.out.println("please enter n:");
+        int n = sc.nextInt();
+        System.out.println("please enter x:");
+        int x = sc.nextInt();
+        for(int i = 1; i <= n; i += 2)
+        {
+            sum += (int)Math.pow(-1, (i-1)/2) * Math.pow(x, i);
+        }
+        System.out.println("enter numbers for the series 1!-3!+5!...");
+        
+        System.out.println("enter numbers for the series x^1-x^3+x^5");
+        System.out.println("enter numbers for the series x^1-x^3+x^5");
+        System.out.println("enter numbers for the series x^1-x^3+x^5");
     }
 }
