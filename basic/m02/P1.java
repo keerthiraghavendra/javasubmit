@@ -5,6 +5,7 @@ public class P1
 {
     public static void main()throws IOException
     {
+        
         InputStreamReader read=new InputStreamReader(System.in);
         BufferedReader in=new BufferedReader(read);
         System.out.println("Task 1:");
